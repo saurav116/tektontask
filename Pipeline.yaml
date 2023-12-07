@@ -47,7 +47,7 @@ spec:
       workspace: shared-workspace
     params:
     - name: PYTHON
-      value: "3.7"
+      value: "3.11.1"
     - name: REQUIREMENTS_FILE
       value: requirements.txt     
   - name: build-image
