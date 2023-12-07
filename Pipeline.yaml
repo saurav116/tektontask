@@ -44,12 +44,7 @@ spec:
       kind: Task
     workspaces:
     - name: source
-      workspace: shared-workspace
-    params:
-    - name: PYTHON
-      value: "3.11.1"
-    - name: REQUIREMENTS_FILE
-      value: requirements.txt     
+      workspace: shared-workspace  
   - name: build-image
     taskRef:
       name: buildah
