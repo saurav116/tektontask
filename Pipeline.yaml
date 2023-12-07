@@ -42,6 +42,11 @@ spec:
     taskRef:
       name: pytest
       kind: Task
+    params:
+    - name: PYTHON
+      value: "3.11.1"
+    - name: REQUIREMENTS_FILE
+      value: requirements.txt 
     workspaces:
     - name: source
       workspace: shared-workspace  
