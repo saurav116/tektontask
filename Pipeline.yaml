@@ -38,7 +38,7 @@ spec:
       value: $(params.git-revision)
   - name: unittest-UI
     runAfter: 
-    - git-clone
+    - fetch-repository
     taskRef:
       name: pytest
       kind: Task
@@ -61,7 +61,7 @@ spec:
     - name: source
       workspace: shared-workspace
     runAfter:
-    - pytest
+    - unittest-UI
   - name: apply-manifests
     taskRef:
       name: apply-manifests
